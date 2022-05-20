@@ -10,8 +10,6 @@ export const Container = styled.div`
 export const Area = styled.div`
     max-width: 980px;
     margin: auto;
-    padding: 20px;
-    border-bottom: 1px solid #78cdd7;
 `;
 
 export const Header = styled.h1`
@@ -20,4 +18,6 @@ export const Header = styled.h1`
     text-align: center;
     font-family: Lobster;
     font-size: 60px;
+    border-bottom: 1px solid #78cdd7;
+    padding: 20px;
 `;

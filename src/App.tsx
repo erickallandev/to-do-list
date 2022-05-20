@@ -17,6 +17,9 @@ const App = () => {
                 {/* Section to add new activities */}
 
                 {/* Section to show the to do list */}
+                {list.map((item, index) => (
+                    item.activity
+                ))}
 
             </C.Area>
         </C.Container>
