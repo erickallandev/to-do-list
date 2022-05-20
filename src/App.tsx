@@ -10,6 +10,16 @@ const App = () => {
         {id: 3, activity: 'Subir o projeto da to-do list no GitHub', done: true}
     ]);
 
+    const handleChangeCheck = (id: number, done: boolean) => {
+        const newList = [...list];
+        for (let i in newList) {
+            if(newList[i].id === id) {
+                newList[i].done = done
+            }
+            setList(newList);
+        }
+    }
+
     return (
         <C.Container>
             <C.Area>
@@ -19,7 +29,11 @@ const App = () => {
 
                 {/* Section to show the to do list */}
                 {list.map((item, index) => (
-                    <ListItem index={index} item={item}/>
+                    <ListItem 
+                    index={index} 
+                    item={item}
+                    onChange={handleChangeCheck}
+                    />
                 ))}
 
             </C.Area>
