@@ -1,6 +1,7 @@
 import * as C from './App.styled';
 import { useState } from 'react';
 import { Item } from './types/Item';
+import  { ListItem } from './components/ListItem/ListItem';
 
 const App = () => {
     const [list, setList] = useState<Item[]>([
@@ -18,7 +19,7 @@ const App = () => {
 
                 {/* Section to show the to do list */}
                 {list.map((item, index) => (
-                    item.activity
+                    <ListItem />
                 ))}
 
             </C.Area>
