@@ -18,5 +18,6 @@ export const Header = styled.h1`
     color: #78cdd7;
     margin: 0;
     text-align: center;
-    text-transform: uppercase;
+    font-family: Lobster;
+    font-size: 60px;
 `;
