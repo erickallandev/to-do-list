@@ -5,9 +5,9 @@ import  { ListItem } from './components/ListItem/ListItem';
 
 const App = () => {
     const [list, setList] = useState<Item[]>([
-        {id: 1, activity: 'Fazer a atividade 1 da to-do list', status: 'undone'},
-        {id: 2, activity: 'Desempenhar a atividade 2 da to-do list', status: 'undone'},
-        {id: 3, activity: 'Subir o projeto da to-do list no GitHub', status: 'done'}
+        {id: 1, activity: 'Fazer a atividade 1 da to-do list', done: false},
+        {id: 2, activity: 'Desempenhar a atividade 2 da to-do list', done: false},
+        {id: 3, activity: 'Subir o projeto da to-do list no GitHub', done: true}
     ]);
 
     return (
@@ -19,7 +19,7 @@ const App = () => {
 
                 {/* Section to show the to do list */}
                 {list.map((item, index) => (
-                    <ListItem />
+                    <ListItem index={index} item={item}/>
                 ))}
 
             </C.Area>

@@ -1,9 +1,21 @@
 import * as C from './styled';
+import { Item } from '../../types/Item';
 
-export const ListItem = () => {
+    type Props = {
+        item: Item,
+        index: number
+}
+
+export const ListItem = ({index, item}:Props) => {
+
     return (
         <C.Container>
+            <input 
+            type="checkbox" 
+            />
             
+            <label>{item.activity} - {item.done.toString()}</label>
+           
         </C.Container>
     );
 }
