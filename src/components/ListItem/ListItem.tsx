@@ -17,7 +17,7 @@ export const ListItem = ({index, item, onChange}:Props) => {
             onChange={e => onChange(item.id, e.target.checked)}
             />
             
-            <label>{item.activity} - {item.done.toString()}</label>
+            <label>{item.activity}</label>
            
         </C.Container>
     );
