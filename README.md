@@ -7,4 +7,4 @@
     - Marcar as tarefas concluídas;
     - Excluir atividades da lista;
 
-    
+- A paleta de cores utilizada foi gerada pelo coolors.co, e pode ser acessada em: https://coolors.co/fffffa-0d5c63-44a1a0-78cdd7-247b7b
