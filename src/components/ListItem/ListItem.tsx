@@ -17,6 +17,7 @@ export const ListItem = ({item, onChange}:Props) => {
             />
             
             <label>{item.activity}</label>
+            <div className='removeButton'>-</div>
            
         </C.Container>
     );

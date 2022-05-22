@@ -14,6 +14,29 @@ export const Container = styled.div(({done}:ContainerProps)=>(
     align-items: center;
     font-family: Montserrat;
     text-transform: uppercase;
+    justify-content: space-between;
+    border: 1px solid white;
+
+    .removeButton {
+        color: ${done? 'white' : 'white'};
+        margin-right: 30px;
+        font-size: 30px;
+        cursor: pointer;
+        background-color: ${done? '#247b7b' : '#0D5C63'};
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+
+            :hover {
+                color: #247b7b;
+                background-color: #FFF;
+            }
+    }
+
         input {
             margin: 0 30px;
             width: 25px;

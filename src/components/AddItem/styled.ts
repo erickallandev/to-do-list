@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     background-color: #247b7b;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     padding: 15px 0;
     border-radius: 0 15px;
     display: flex;
@@ -10,6 +11,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
         input {
             background-color: transparent;
             outline: none;
