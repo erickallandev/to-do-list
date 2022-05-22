@@ -3,11 +3,10 @@ import { Item } from '../../types/Item';
 
     type Props = {
         item: Item,
-        index: number,
         onChange: (id: number, done: boolean) => void
 }
 
-export const ListItem = ({index, item, onChange}:Props) => {
+export const ListItem = ({item, onChange}:Props) => {
 
     return (
         <C.Container>

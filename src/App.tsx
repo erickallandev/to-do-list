@@ -21,7 +21,7 @@ const App = () => {
         }
     }
 
-    const handleOnEnter = (taskName:string) => {
+    const handleOnEnter = (taskName: string) => {
         const newList = [...list];
         newList.push({
             id: list.length + 1,
@@ -46,7 +46,7 @@ const App = () => {
 
                 {list.map((item, index) => (
                     <ListItem 
-                    index={index} 
+                    key={index} 
                     item={item}
                     onChange={handleChangeCheck}
                     />
