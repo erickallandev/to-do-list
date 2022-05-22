@@ -2,6 +2,7 @@ import * as C from './App.styled';
 import { useState } from 'react';
 import { Item } from './types/Item';
 import  { ListItem } from './components/ListItem/ListItem';
+import { AddItem } from './components/AddItem/AddItem';
 
 const App = () => {
     const [list, setList] = useState<Item[]>([
@@ -20,14 +21,29 @@ const App = () => {
         }
     }
 
+    const handleOnEnter = (taskName:string) => {
+        const newList = [...list];
+        newList.push({
+            id: list.length + 1,
+            activity: taskName,
+            done: false
+        });
+        setList(newList);
+    }
+
     return (
         <C.Container>
             <C.Area>
                 <C.Header>To do List</C.Header>
 
                 {/* Section to add new activities */}
+                <AddItem 
+                onEnter={handleOnEnter}
+                />
+
 
                 {/* Section to show the to do list */}
+
                 {list.map((item, index) => (
                     <ListItem 
                     index={index} 

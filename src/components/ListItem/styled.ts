@@ -7,6 +7,8 @@ export const Container = styled.div`
     border-radius: 0 15px;
     display: flex;
     align-items: center;
+    font-family: Montserrat;
+    text-transform: uppercase;
         input {
             margin: 0 30px;
             width: 25px;
