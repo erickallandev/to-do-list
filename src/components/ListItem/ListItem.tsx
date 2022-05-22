@@ -3,10 +3,11 @@ import { Item } from '../../types/Item';
 
     type Props = {
         item: Item,
-        onChange: (id: number, done: boolean) => void
+        onChange: (id: number, done: boolean) => void,
+        clickRemoveButton: (id:number) => void
 }
 
-export const ListItem = ({item, onChange}:Props) => {
+export const ListItem = ({item, onChange, clickRemoveButton}:Props) => {
 
     return (
         <C.Container done={item.done}>
@@ -17,7 +18,10 @@ export const ListItem = ({item, onChange}:Props) => {
             />
             
             <label>{item.activity}</label>
-            <div className='removeButton'>-</div>
+            <div 
+            className='removeButton'
+            onClick={e => clickRemoveButton(item.id)}
+            >-</div>
            
         </C.Container>
     );

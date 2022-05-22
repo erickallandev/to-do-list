@@ -31,6 +31,11 @@ const App = () => {
         setList(newList);
     }
 
+    const handleRemoveButton = (id: number) => {
+        let newList = list.filter(item => item.id !== id);
+        setList(newList);
+    }
+
     return (
         <C.Container>
             <C.Area>
@@ -49,6 +54,7 @@ const App = () => {
                     key={index} 
                     item={item}
                     onChange={handleChangeCheck}
+                    clickRemoveButton={handleRemoveButton}
                     />
                 ))}
 
