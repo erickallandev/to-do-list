@@ -1,7 +1,12 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-    background-color: #247b7b;
+type ContainerProps = {
+    done: boolean
+}
+
+export const Container = styled.div(({done}:ContainerProps)=>(
+    `
+    background-color: ${done? '#0D5C63' : '#247b7b'};
     margin-bottom: 10px;
     padding: 15px 0;
     border-radius: 0 15px;
@@ -14,7 +19,9 @@ export const Container = styled.div`
             width: 25px;
             height: 25px;
         }
+
         label {
-            color: #FFF;
-        }
-`;
+            color: ${done? 'black' : 'white'};
+            text-decoration: ${done? 'line-through' : 'none'}
+`
+))

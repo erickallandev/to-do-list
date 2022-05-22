@@ -9,7 +9,7 @@ import { Item } from '../../types/Item';
 export const ListItem = ({item, onChange}:Props) => {
 
     return (
-        <C.Container>
+        <C.Container done={item.done}>
             <input 
             type="checkbox"
             checked={item.done}
