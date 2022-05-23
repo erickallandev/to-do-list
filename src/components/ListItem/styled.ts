@@ -15,7 +15,7 @@ export const Container = styled.div(({done}:ContainerProps)=>(
     font-family: Montserrat;
     text-transform: uppercase;
     justify-content: space-between;
-    border: 1px solid white;
+    border: ${done? '1px solid black' : '1px solid white'};
 
     .removeButton {
         color: ${done? 'white' : 'white'};
