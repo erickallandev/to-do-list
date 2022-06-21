@@ -37,6 +37,7 @@ const App = () => {
     }
 
     return (
+        <>
         <C.Container>
             <C.Area>
                 <C.Header>To do List</C.Header>
@@ -60,6 +61,8 @@ const App = () => {
 
             </C.Area>
         </C.Container>
+        <C.Footer>Developed by Erick Allan Silva <C.link href='https://eawebdev.com' target='_blank'> - EaWebDev</C.link> 2022</C.Footer>
+        </>
     );
 }
 
