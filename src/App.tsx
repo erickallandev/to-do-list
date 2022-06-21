@@ -6,9 +6,8 @@ import { AddItem } from './components/AddItem/AddItem';
 
 const App = () => {
     const [list, setList] = useState<Item[]>([
-        {id: 1, activity: 'Fazer a atividade 1 da to-do list', done: false},
-        {id: 2, activity: 'Desempenhar a atividade 2 da to-do list', done: false},
-        {id: 3, activity: 'Subir o projeto da to-do list no GitHub', done: true}
+        {id: 1, activity: 'Exemplo de atividade adicionada e pendente', done: false},
+        {id: 2, activity: 'Exemplo de atividade adicionada e concluída', done: false}
     ]);
 
     const handleChangeCheck = (id: number, done: boolean) => {
